@@ -1,0 +1,203 @@
+/* ===================== user-Admin ===================== */
+
+@media screen and (max-width: 1200px) {
+  .sidebar-close-menu {
+    display: block;
+  }
+  .user-admin-left {
+    padding: 50px 30px;
+    background: #f4f6f9;
+    left: -100%;
+    display: block;
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    z-index: 9;
+    transition: 0.4s;
+    width: 330px;
+  }
+  .open-menu {
+    display: flex;
+  }
+  .sidebar-menu-icons {
+    display: block;
+  }
+  .active.user-admin-left {
+    left: 0;
+  }
+  .user-content {
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+  }
+  .sidebar-close-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .user-admin-left {
+    padding: 50px 30px;
+    background: #f4f6f9;
+  }
+  .user-content {
+    margin-top: 50px;
+  }
+  .user-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .user-content-right-site {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+  .user-content-left span {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .user-content-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .recent-bids-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .saved-item-header {
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  .user-list-all-items {
+    overflow-x: scroll;
+  }
+  .user-list-all-items .user-list-select-item {
+    width: 200px;
+  }
+  .recent-select-item select {
+    border: none;
+    width: 183px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .user-admin-left {
+    padding: 50px 30px;
+    background: #f4f6f9;
+  }
+  .user-content {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    margin-top: 40px;
+  }
+  .user-content-left-site {
+    width: 185px;
+  }
+  .user-content-right-site {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-right: 10px;
+  }
+  .user-content-left span {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .star svg {
+    width: 15px;
+  }
+  .user-setting a {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .user-setting a img {
+    width: 20px;
+  }
+  .user-notification a {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .user-notification a img {
+    width: 20px;
+  }
+  .notification-count {
+    position: absolute;
+    top: 0;
+    right: -14px;
+    font-weight: 300;
+    height: 15px;
+    font-size: 11px;
+    width: 20px;
+  }
+  .user-content-right {
+    padding: 0 10px;
+  }
+  .user-content-left-site {
+    background: #f9f9f9;
+    border-radius: 31px;
+    padding: 5px 20px;
+  }
+  button.creator {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  .user-content-left-site span {
+    font-size: 12px;
+  }
+  .user-featured-creator-title .sec-title-left {
+    width: 65%;
+  }
+  .user-featured-creator-title .sec-title-left h2 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .user-featured-creator-title .sec-title-left p {
+    font-size: 14px;
+  }
+  .user-trading-left h2 {
+    font-size: 20px;
+  }
+  .tops-items img {
+    width: 80px;
+    height: 80px;
+  }
+  .recent-bids-right {
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .recent-search input {
+    border: none;
+    width: 93%;
+  }
+  .recent-search {
+    width: 100%;
+  }
+  .recent-select-item {
+    width: 100%;
+  }
+  .saved-search .recent-search {
+    width: 200px !important;
+  }
+  .user-list-all-items {
+    gap: 20px;
+    width: 100%;
+  }
+  .balance-contents h2 {
+    font-size: 35px;
+    margin: 10px 0;
+  }
+  .balance-contents h5 {
+    font-size: 20px;
+  }
+}
