@@ -243,3 +243,70 @@
     font-weight: 600; 
     border-radius: 4px;
   }
+  .drop-profile-stage{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: var(--white-color);
+    box-shadow: 4px 4px 110px rgba(252, 80, 80, 0.08);
+border-radius: 10px;
+}
+.drop-profile-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.drop-profile-img img{
+    width: 100%;
+}
+.drop-conent h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.save-collection-btn-at{
+    background: var(--white-color);
+border: 1px solid #000000;
+border-radius: 71px;
+color: var(--main-color);
+padding: 10px 35px;
+margin-right: 20px;
+font-weight: 700;
+}
+.collection-item-address .opensea-earning {
+    width: 100%;
+    border: 1px solid #E7E8EC;
+    padding: 7px 20px;
+    border-radius: 4px;
+    display:flex;
+    gap: 10px;
+}
+.new-create-collection-itemss{
+    width: 400px;
+}
+.new-create-collection-item .product-image{
+    width:100%;
+}
+.new-create-collection-item .input-img-feild{
+    width: 100%;
+    height: 400px;
+    background-color: var(--white-color);
+}
+.input-img-feild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.input-img-feild input{
+border: none;
+width: 50%;
+margin: auto;
+border-radius: 10px;
+}
+.new-create-content-wrapper1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import EditColItem from "./EditCollectionItem/EditColItem";
 import CollectionEarning from "./EditCollectionItem/CollectionEarning";
 import CollectionLink from "./EditCollectionItem/CollectionLink";
+import DropSettingItem from "./EditCollectionItem/DropSettingItem";
+import DropPreReveal from "./EditCollectionItem/DropPreReveal";
+import DropEarning from "./EditCollectionItem/DropEarning";
 
 const EditCreateCollection = () => {
   const [toggle, setToggle] = useState(1);
@@ -123,17 +126,17 @@ const EditCreateCollection = () => {
           <div
             className={toggle === 4 ? "edit-col active-edit-col" : "edit-col"}
           >
-            <h1>hello</h1>
+           <DropSettingItem/>
           </div>
           <div
             className={toggle === 5 ? "edit-col active-edit-col" : "edit-col"}
           >
-            <h1>hello</h1>
+         <DropPreReveal/>
           </div>
           <div
             className={toggle === 6 ? "edit-col active-edit-col" : "edit-col"}
           >
-            <h1>hello</h1>
+          <DropEarning/>   
           </div>
         </div>
       </div>
