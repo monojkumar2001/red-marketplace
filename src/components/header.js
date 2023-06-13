@@ -165,6 +165,11 @@ function Header() {
                         Authors
                          </HashLink>
                         </li>
+                        <li>
+                         <HashLink to='/my-collection' className='dp-link' onClick={_toggleSidebar}>
+                        My Collection
+                         </HashLink>
+                        </li>
                         
                         <li>
                         <HashLink to='/ranking' className='dp-link' onClick={_toggleSidebar}>

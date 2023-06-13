@@ -24,6 +24,8 @@ import UserWallet from "./components/dashboard/User-wallet";
 import Ranking from "./components/Ranking";
 import Collection from "./components/Collection";
 import CollectionCreate from "./components/CollectionCreate";
+import MyCollection from "./components/MyCollection";
+import EditCreateCollection from "./components/EditCreateCollection";
 function App() {
   return (
     <Router>
@@ -96,6 +98,12 @@ function App() {
           </Route>
           <Route exact path="/collection-create">
             <CollectionCreate/>
+          </Route>
+          <Route exact path="/my-collection">
+            <MyCollection/>
+          </Route>
+          <Route exact path="/edit-create-collection">
+            <EditCreateCollection/>
           </Route>
         </Switch>
 
