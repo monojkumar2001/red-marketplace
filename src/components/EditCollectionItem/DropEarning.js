@@ -5,7 +5,7 @@ const DropEarning = () => {
     <>
       <div className="new-create-content-wrapper">
         <div className="new-create-collection-item">
-          <h5 class="modal-titles">Drop Earning</h5>
+          <h5 className="modal-titles">Drop Earning</h5>
           <p>
             Add wallt to receice eaning from yuour rimary sale. you can add
             multiple wallets by using a splitter contract OpenSea take a 10% fee
@@ -18,7 +18,7 @@ const DropEarning = () => {
             type="text"
             placeholder="089fdsdsf9sf7s9009a7sx07a9d7ad8"
           />
-          <input className="input-fuild2" type="text" placeholder="90%" />
+     <span className="input-fuild2">90%</span>
         </div>
         <div className="new-create-collection-item collection-item-address">
           <span className="opensea-earning">
@@ -44,7 +44,7 @@ const DropEarning = () => {
             </svg>
             OpenSea
           </span>
-          <input className="input-fuild2" type="text" placeholder="90%" />
+          <span className="input-fuild2">90%</span>
         </div>
         <div className="add-collection-address">
           <button>+ Add Address</button>

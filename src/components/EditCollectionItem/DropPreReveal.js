@@ -4,7 +4,7 @@ const DropPreReveal = () => {
     <>
       <div className="new-create-content-wrapper new-create-content-wrapper1">
         <div className="new-create-collection-item">
-          <h5 class="modal-titles">Drop Setting</h5>
+          <h5 className="modal-titles">Drop Setting</h5>
           <p>
             Each NFT in your collection will shwo your pre- reveal media until
             you upload and reveal your final assests

@@ -26,6 +26,7 @@ import Collection from "./components/Collection";
 import CollectionCreate from "./components/CollectionCreate";
 import MyCollection from "./components/MyCollection";
 import EditCreateCollection from "./components/EditCreateCollection";
+import UserMint from "./components/UserMint";
 function App() {
   return (
     <Router>
@@ -104,6 +105,9 @@ function App() {
           </Route>
           <Route exact path="/edit-create-collection">
             <EditCreateCollection/>
+          </Route>
+          <Route exact path="/user-mint">
+            <UserMint/>
           </Route>
         </Switch>
 

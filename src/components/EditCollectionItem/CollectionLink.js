@@ -5,7 +5,7 @@ const CollectionLink = () => {
     <>
       <div className="new-create-content-wrapper">
         <div className="new-create-collection-item">
-          <h5 class="modal-titles">Links</h5>
+          <h5 className="modal-titles">Links</h5>
           <p>
             Help people find and join your community by connecting your social
             media accounts

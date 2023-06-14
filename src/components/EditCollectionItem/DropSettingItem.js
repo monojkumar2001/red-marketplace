@@ -5,7 +5,7 @@ const DropSettingItem = () => {
     <>
        <div className="new-create-content-wrapper">
         <div className="new-create-collection-item">
-          <h5 class="modal-titles">Drop Setting</h5>
+          <h5 className="modal-titles">Drop Setting</h5>
         </div>
         <div className="new-create-collection-item">
           <div className="create-collection-short-items">
@@ -15,12 +15,12 @@ const DropSettingItem = () => {
             </div>
             <div className="create-collection-short-item dark-mode">
               <input
-                class="dm-check"
+                className="dm-check"
                 type="checkbox"
                 name="darkmode"
                 id="darkmode3"
               />
-              <label class="dm-label" for="darkmode3" />
+              <label className="dm-label" for="darkmode3" />
             </div>
           </div>
         </div>
@@ -32,12 +32,12 @@ const DropSettingItem = () => {
             </div>
             <div className="create-collection-short-item dark-mode">
               <input
-                class="dm-check"
+                className="dm-check"
                 type="checkbox"
                 name="darkmode"
                 id="darkmode4"
               />
-              <label class="dm-label" for="darkmode4" />
+              <label className="dm-label" for="darkmode4" />
             </div>
           </div>
         </div>

@@ -45,11 +45,16 @@
     font-weight: 600;
     background: none;
     width: 100%;
+    transition: 0.4s;
     text-align: left;
     color: var(--white-color);
 }
 .edit-collection-items .edit-collection-item .active-tabs{
     background-color: var(--white-color);
+    color: var(--main-color);
+}
+.edit-collection-items .edit-collection-item .tabs:hover{
+  background-color: var(--white-color);
     color: var(--main-color);
 }
 .close-menus {
@@ -309,4 +314,17 @@ border-radius: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.edit-collection-item .edit-collectin-link{
+  padding:10px 40px;
+  color: var(--white-color);
+  font-weight: 600;
+  width: 100%;
+  transition: 0.4s;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.edit-collection-item .edit-collectin-link:hover{
+  background-color: var(--white-color) ;
+  color: var(--main-color);
 }

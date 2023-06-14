@@ -78,12 +78,12 @@ const EditColItem = () => {
             </div>
             <div className="create-collection-short-item dark-mode">
               <input
-                class="dm-check"
+                className="dm-check"
                 type="checkbox"
                 name="darkmode"
                 id="darkmode1"
               />
-              <label class="dm-label" for="darkmode1" />
+              <label className="dm-label" for="darkmode1" />
             </div>
           </div>
         </div>
@@ -95,12 +95,12 @@ const EditColItem = () => {
             </div>
             <div className="create-collection-short-item dark-mode">
               <input
-                class="dm-check"
+                className="dm-check"
                 type="checkbox"
                 name="darkmode"
                 id="darkmode2"
               />
-              <label class="dm-label" for="darkmode2" />
+              <label className="dm-label" for="darkmode2" />
             </div>
           </div>
         </div>

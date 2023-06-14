@@ -5,7 +5,7 @@ import CollectionLink from "./EditCollectionItem/CollectionLink";
 import DropSettingItem from "./EditCollectionItem/DropSettingItem";
 import DropPreReveal from "./EditCollectionItem/DropPreReveal";
 import DropEarning from "./EditCollectionItem/DropEarning";
-
+import { Link } from "react-router-dom";
 const EditCreateCollection = () => {
   const [toggle, setToggle] = useState(1);
   const togglebtn = (index) => {
@@ -90,6 +90,9 @@ const EditCreateCollection = () => {
               >
                 Earnings
               </button>
+            </li>
+            <li className="edit-collection-item">
+              <Link to='/user-mint' className="edit-collectin-link">Drop Page</Link>
             </li>
           </ul>
           <div className="close-menus" onClick={_toggleSidebar2}>

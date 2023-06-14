@@ -5,7 +5,7 @@ const CollectionEarning = () => {
     <>
       <div className="new-create-content-wrapper">
         <div className="new-create-collection-item">
-          <h5 class="modal-titles">Creator Earnings</h5>
+          <h5 className="modal-titles">Creator Earnings</h5>
           <p>
             Collection owners can collect creator earning whena user re-sells an
             item they created. Contact the collection owner to change the
