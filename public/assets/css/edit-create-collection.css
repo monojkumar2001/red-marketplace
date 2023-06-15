@@ -328,3 +328,34 @@ border-radius: 10px;
   background-color: var(--white-color) ;
   color: var(--main-color);
 }
+@media screen and (max-width: 700px) {
+  .new-create-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 11112;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal-content {
+    padding: 30px 10px;
+    box-shadow: 4px 4px 110px rgba(252, 80, 80, 0.08);
+}
+.modal-titles {
+  font-size: 22px;
+}
+.my-collection-content h4 {
+  font-size: 18px;
+}
+
+}
