@@ -315,6 +315,24 @@ line-height: 20px;
 margin-top: 10px;
 font-weight: normal;
 }
+.proper-con{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+border-bottom: 1px solid  #E7E8EC;
+margin-bottom: 15px;
+}
+.proper-add-btn{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 4px;
+  background: none;
+  border: 1px solid var(--main-color);
+}
 /* <!--==================== edit-profile- end============== --> */
 
 /* =================edit-profile-responsive  */

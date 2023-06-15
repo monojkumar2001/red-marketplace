@@ -7,7 +7,7 @@ import Item from "./components/item";
 import Explore from "./components/explore";
 import Activity from "./components/activity";
 import Wallet from "./components/wallet";
-import Create from "./components/createItem";
+import CreateItem from "./components/createItem";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Action from "./components/Action";
 import Help from "./components/Help";
@@ -27,6 +27,7 @@ import CollectionCreate from "./components/CollectionCreate";
 import MyCollection from "./components/MyCollection";
 import EditCreateCollection from "./components/EditCreateCollection";
 import UserMint from "./components/UserMint";
+import Create from "./components/Create";
 function App() {
   return (
     <Router>
@@ -95,7 +96,7 @@ function App() {
             <Ranking />
           </Route>
           <Route exact path="/item-create">
-            <Create />
+            <CreateItem/>
           </Route>
           <Route exact path="/collection-create">
             <CollectionCreate/>
@@ -108,6 +109,9 @@ function App() {
           </Route>
           <Route exact path="/user-mint">
             <UserMint/>
+          </Route>
+          <Route exact path="/create">
+            <Create/>
           </Route>
         </Switch>
 

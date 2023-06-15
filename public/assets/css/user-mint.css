@@ -202,3 +202,46 @@ gap: 15px;
     font-size: 20px;
     font-weight: 700;
 }
+
+.table-propertice{
+    width: 100%;
+    border: 1px solid #C0C0C0;
+    margin-top: 20px;
+}
+.table-propertice tbody{
+    margin-top: 10px;
+}
+.table-propertice tbody td{
+    padding: 10px;
+    border: 1px solid #C0C0C0 !important;
+}
+.table-propertice tbody td input{
+    border: none;
+}
+.proper-remove{
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+.add_proper{
+    margin-top: 30px;
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    border: none;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+.new-create-contents{
+    margin-top: 30px;
+}
+.new-create-contents .my-collection-btn{
+    width: 100%;
+}
