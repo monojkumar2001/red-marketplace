@@ -328,21 +328,18 @@ border-radius: 10px;
   background-color: var(--white-color) ;
   color: var(--main-color);
 }
+@media screen and (max-width: 992px) {
+  .edit-col {
+    width: 100%;
+    padding: 50px;
+}
+.edit-create-collection-wrapper {
+  border-radius: 20px;
+}
+}
 @media screen and (max-width: 700px) {
   .new-create-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #ffffff;
-    padding: 30px;
-    width: 100%;
-    border-radius: 10px;
-    z-index: 11112;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 80px;
+    width: 450px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -356,5 +353,70 @@ border-radius: 10px;
 .my-collection-content h4 {
   font-size: 18px;
 }
+.new-create-content {
 
+  width: 350px;
+}
+.edit-create-collection {
+  padding: 80px 10px 20px 10px;
+}
+.edit-col {
+  width: 100%;
+  padding: 30px 20px;
+}
+.edit-create-collection-wrapper {
+  border-radius: 10px;
+}
+.collection-item-address .input-fuild2 {
+  width: 60px;
+}
+.dm-label {
+  width: 40px;
+  height: 20px;
+}
+.new-create-collection-itemss {
+  width: 100%;
+}
+.new-create-collection-item .input-img-feild {
+  width: 100%;
+  height: 100%;
+}
+.save-col-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.save-collection-btn-at {
+  margin-right: 00px;
+}
+.close-menus {
+  right: 30px;
+  top: 30px;
+}
+.edit-collection-items .edit-collection-item .tabs {
+  text-align: center;
+}
+.edit-create-collection-title {
+  font-size: 20px;
+  padding-left: 0px;
+}
+.mint-user-img-items {
+  margin-top: 40px;
+}
+.mint-roodmap-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.mint-roadmap-content {
+  width: 100% !important;
+}
+.mint-team-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 }
