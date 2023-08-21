@@ -8,7 +8,7 @@ import Explore from "./components/explore";
 import Activity from "./components/activity";
 import Wallet from "./components/wallet";
 import CreateItem from "./components/createItem";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Action from "./components/Action";
 import Help from "./components/Help";
 import Author from "./components/Author";
@@ -18,9 +18,7 @@ import AuthorProfile from "./components/AuthorProfile";
 import EditProfile from "./components/EditProfile";
 import User_admin from "./components/dashboard/User_admin";
 import Bids from "./components/dashboard/Bids";
-import Saved from "./components/dashboard/Saved";
-import User_list from "./components/dashboard/User_list";
-import UserWallet from "./components/dashboard/User-wallet";
+
 import Ranking from "./components/Ranking";
 import Collection from "./components/Collection";
 import CollectionCreate from "./components/CollectionCreate";
@@ -28,96 +26,48 @@ import MyCollection from "./components/MyCollection";
 import EditCreateCollection from "./components/EditCreateCollection";
 import UserMint from "./components/UserMint";
 import Create from "./components/Create";
+import CollectedItem from "./components/dashboard/CollectedItem";
+import UserOffersMade from "./components/dashboard/UserOffersMade";
+import UserDeals from "./components/dashboard/UserDeals";
+import UserFavorited from "./components/dashboard/UserFavorited";
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="wrapper">
         <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/collection">
-            <Collection />
-          </Route>
-          <Route exact path="/home">
-            <Home />
-          </Route>
+        <Routes>
+          <Route path="/" element={<Home />}/> 
+          <Route path="/collection"  element={  <Collection />}/>
+          <Route path="/item"  element={   <Item />}/>
+          <Route path="/author-profile" element={<AuthorProfile />}/>
+          <Route path="/explore" element={<Explore />}/>
+          <Route path="/activity" element={ <Activity />}/>
+          <Route path="/wallet" element={  <Wallet />}/>
+          <Route path="/action" element={  <Action />}/>
+          <Route path="/help" element={  <Help />}/>
+          <Route path="/author" element={  <Author />}/>
+          <Route path="/contact" element={  <Contact/>}/>
+          <Route path="/User-profile" element={  <EditProfile />}/>
+          <Route path="/ranking" element={  <Ranking />}/>
+          <Route path="/item-create" element={<CreateItem/>}/>
+          <Route path="/collection-create" element={<CollectionCreate/>}/>
+          <Route path="/my-collection" element={ <MyCollection/>}/>
+          <Route path="/edit-create-collection" element={ <EditCreateCollection/>}/>
+          <Route path="/user-mint" element={ <UserMint/>}/>
+          <Route path="/create" element={<Create/>}/>
 
-          <Route exact path="/item">
-            <Item />
-          </Route>
-          <Route exact path="/author-profile">
-            <AuthorProfile />
-          </Route>
-          <Route exact path="/explore">
-            <Explore />
-          </Route>
-          <Route exact path="/activity">
-            <Activity />
-          </Route>
-          <Route exact path="/wallet">
-            <Wallet />
-          </Route>
-          <Route exact path="/action">
-            <Action />
-          </Route>
-          <Route exact path="/help">
-            <Help />
-          </Route>
-          <Route exact path="/author">
-            <Author />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/User-profile">
-            <EditProfile />
-          </Route>
-          <Route exact path="/ranking">
-            <Ranking />
-          </Route>
-          <Route exact path="/user-admin">
-            <User_admin />
-          </Route>
-          <Route exact path="/bids">
-            <Bids />
-          </Route>
-          <Route exact path="/saved">
-            <Saved />
-          </Route>
-          <Route exact path="/user-list">
-            <User_list />
-          </Route>
-          <Route exact path="/user-wallet">
-            <UserWallet />
-          </Route>
-          <Route exact path="/ranking">
-            <Ranking />
-          </Route>
-          <Route exact path="/item-create">
-            <CreateItem/>
-          </Route>
-          <Route exact path="/collection-create">
-            <CollectionCreate/>
-          </Route>
-          <Route exact path="/my-collection">
-            <MyCollection/>
-          </Route>
-          <Route exact path="/edit-create-collection">
-            <EditCreateCollection/>
-          </Route>
-          <Route exact path="/user-mint">
-            <UserMint/>
-          </Route>
-          <Route exact path="/create">
-            <Create/>
-          </Route>
-        </Switch>
+          <Route path="/account" element={  <User_admin />}>
+            <Route index element={<CollectedItem/>}/>
+            <Route path="/account/bids" element ={<Bids/>} />
+            <Route path="/account/offers-made" element ={<UserOffersMade/>} />
+            <Route path="/account/deals" element ={<UserDeals/>} />
+            <Route path="/account/favorited" element ={<UserFavorited/>} />
+          </Route>        
+        </Routes>
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

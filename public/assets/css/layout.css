@@ -390,6 +390,35 @@ button.subscribe-btn {
     border: none;
 }
 
-@media screen and (max-width: 600px) {
 
+
+
+
+/* =============== Search bar =========== */
+
+.results-list{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    margin-top: 1rem;
+    overflow-y:auto;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 20%;
+}
+.results-list ul{
+    padding: 5px 20px;
+}
+.results-list ul li a{
+    color: #0b0c11;
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+    .results-list{
+        width: 100%;
+        left: 0;
+    }
 }

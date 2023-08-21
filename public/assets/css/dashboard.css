@@ -141,12 +141,135 @@
 .product-card.user-product.cpys-2 {
   margin-top: 30px;
 }
+.nft-item-card .nft-title{
+  font-size: 18px;
+  color: #555d68;
+  font-weight: 600;
+}
+.nft-item-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 36px rgba(106, 55, 251, 0.2);
+  background: rgba(255, 62, 62, 0.07);
+  border: 1px solid rgba(255, 62, 62, 0.12);
+}
+.nft-item-card img.product {
+  width: 100%;
+  border-radius: 10px;
+}
+.nft-item-card .name-cat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.nft-item-card p.token-type {
+  padding: 0 13px;
+  border-radius: 4px;
+  line-height: 27px;
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+
+
+/* =================  */
+
+
+
+.dashboard-header-item{
+  padding: 0 40px 20px 40px;
+  border-bottom: 1px solid rgba(7, 2, 40, 0.20);
+  margin-bottom: 40px;
+}
+.dashboard-header-item .dashboard-con-btn button{
+  border-radius: 6px;
+background: rgba(0, 23, 44, 0.05);
+padding: 10px 20px;
+color: var(--black-color);
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;
+border: none;
+width: 150px;
+color: rgba(7, 2, 40, 0.60);
+}
+.dashboard-header-item .dashboard-con-btn button.my-nft-btn.active-my-nft-btn{
+  background: var(--main-color);
+  color: var(--white-color);
+}
+.dashboard-header-item .dashboard-count span{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  color: var(--black-color);
+}
+.dashboard-header-item .dashboard-count .dashboard-refresh-btn{
+width: 30px;
+height: 30px;
+border: none;
+border-radius: 6px;
+background: #D9D9D9;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.active-filter-item-bar{
+  background-color: var(--main-color);
+  width: 100%;
+}
+.filter-list-item{
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.dashboard-wrapper{
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+ height: 100%;
+  background-color: var(--white-color);
+}
+
+
+.dashboard-content-item{
+  margin-top: 20px;
+}
+.filter-list-item-ber{
+  display: none;
+  color: black;
+}
+.filter-list-item-ber.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .user-category {
   display: flex;
   flex-direction: column;
-  /* gap: 20px 0; */
-  /* padding: 0 28px; */
   margin-bottom: 50px;
 }
 
@@ -155,10 +278,10 @@
   height: 20px;
 }
 
-.user-category-item a {
+.user-category-item span{
   color: #555d68;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .user-title-head p {
@@ -170,7 +293,7 @@
   color: #ffc700;
 }
 
-.user-category-item a:hover {
+.user-category-item:hover span {
   color: #e03939;
 }
 
@@ -180,7 +303,7 @@
 
 .user-content {
   width: 80%;
-  padding: 50px;
+  padding: 40px 30px 80px 30px ;
   background: #ffffff;
 }
 
@@ -189,7 +312,6 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: 30px;
 }
 
 .user-content-left span {
@@ -233,22 +355,52 @@ button.creator {
   display: flex;
   align-items: center;
   gap: 0 30px;
+  position: relative;
+}
+.user-content-right-site:hover .dp-notification{
+opacity: 1;
+visibility: visible;
+z-index: 1;
+}
+.user-content-right-site .dp-notification {
+  position: absolute;
+  width: 250px;
+  /* background: var(--white-color); */
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  margin-top: 35px;
+  right: 0;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  background: var(--white-color);
+}
+.user-content-right-site .dp-notification .list-item{
+  transition: all 0.4s ease-in-out;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+.user-content-right-site .dp-notification .list-item:hover{
+  background: var(--main-color);
+  color: var(--white-color);
+}
+.user-content-right-site .dp-notification .list-item .user-profle{
+  width: 30px;
+  height: 30px;
+}
+.user-content-right-site .dp-notification .list-item .user-profle img{
+width: 100%;
+border-radius: 50%;
+}
+.user-content-right-site .dp-notification .list-item p{
+  font-size: 16px;
+  color: var(--black-color);
 }
 
-.user-setting a {
-  width: 70px;
-  height: 70px;
-  padding: 10px;
-  border: 2px solid #f9f9f9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.user-notification a {
-  width: 70px;
-  height: 70px;
+.user-notification{
+  width: 50px;
+  height: 50px;
   padding: 10px;
   border: 2px solid #f9f9f9;
   display: flex;
@@ -256,6 +408,7 @@ button.creator {
   justify-content: center;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
 }
 
 .notification-count {
@@ -263,45 +416,16 @@ button.creator {
   top: 0;
   right: -14px;
   background: #fc0380;
-  border-radius: 14px;
+  border-radius: 100%;
   color: #ffffff;
   font-weight: 700;
   height: 30px;
-  font-size: 14px;
-  width: 40px;
+  font-size: 11px;
+  width: 29px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.user-tranding-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-
-.user-tranding-auction {
-  margin-top: 50px;
-}
-
-.user-trading-left h2 {
-  font-weight: 700;
-}
-
-.user-trading-left a p {
-  color: #6345ed;
-  font-weight: 500;
-}
-
-.user-trading-left span {
-  padding: 3px 9px;
-  border: 1px solid #f2f2f2;
-  border-radius: 14px;
-  color: #6345ed;
-  font-weight: 600;
-}
-
 .user-product {
   border: 1px solid rgba(99, 69, 237, 0.12);
   box-shadow: 0px 30px 60px rgba(138, 149, 158, 0.1);
@@ -369,20 +493,6 @@ button.creator {
   color: #e03939;
   font-weight: 500;
 }
-
-.top-follow {
-  /* transform: rotateZ(90deg); */
-  /* position: relative; */
-  /* left: 20px; */
-}
-
-.user-admin-author-item {
-  /* background: none !important; */
-  /* border: none; */
-  transition: 0.4s;
-  /* margin-bottom: 30px; */
-}
-
 .user-admin-author-item:hover {
   background: #ffffff;
   box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
@@ -391,37 +501,6 @@ button.creator {
 /* ==================== User Admin End=========================== */
 
 /* ======================== Bids Start ====================== */
-
-.bid-card {
-  display: flex;
-  gap: 0 20px;
-  background: #ffffff;
-  border: 1px solid #dedede;
-  border-radius: 20px;
-  padding: 15px;
-  margin-bottom: 30px;
-}
-
-.bid-color-round {
-  width: 30px;
-  height: 30px;
-  background: #f4462e;
-  border-radius: 50%;
-}
-
-.yellow-round {
-  background: #ffbb00 !important;
-}
-
-.navi-bule-round {
-  background: #6f4ef2 !important;
-}
-
-.price-time {
-  background: rgba(113, 200, 77, 0.3) !important;
-  color: #71c84d !important;
-}
-
 .bid-card-content {
   display: flex;
   flex-direction: column;
@@ -579,126 +658,6 @@ table > :not(caption) > * > * {
 }
 
 /* ======================== Bids End ====================== */
-
-/* ===================== User list start ============ */
-
-.user-list-header {
-  margin-top: 50px;
-}
-
-.list-read-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-.user-list-select-item {
-  width: 200px !important;
-}
-.user-list-select-item .form-select{
-  width: 180px !important;
-}
-/* ===================== User list end ============ */
-
-/* ===================== Saved start ============ */
-
-.saved-item-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 40px 0;
-}
-
-.saved-item-all-btn {
-  display: flex;
-  align-items: center;
-  gap: 0 15px;
-}
-
-.saved-item-btn button {
-  width: 100px;
-  height: 50px;
-  background: #f3f5f9;
-  border-radius: 10px;
-  border: none;
-  font-size: 18px;
-  font-weight: 700;
-  transition: 0.4s;
-  color: #b0b1bc;
-}
-
-.saved-item-btn button:hover {
-  color: #ffffff;
-  background: linear-gradient(180deg, #fc5050 0%, #e03939 100%);
-}
-
-/* ===================== Saved end ============ */
-
-/* ==================== User Wallet start ============== */
-
-.user-wallet-balance-item {
-  margin-top: 50px;
-}
-
-.user-wallet-balance-item .balance-item-content {
-  width: 100%;
-  background: #ffffff;
-  border: 3px solid #dcdcdc;
-  border-radius: 20px;
-  padding: 50px 0 0 50px;
-}
-
-.user-wallet-balance-item .balance-imgs img {
-  width: 100%;
-}
-
-.balance-contents h5 {
-  color: #14161b;
-  font-weight: 700;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.balance-contents span {
-  color: #b0b1bc;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 0;
-}
-
-.balance-contents h2 {
-  font-weight: 700;
-  font-size: 45px;
-  margin: 15px 0;
-  color: #14161b;
-}
-
-.balance-contents h4 {
-  background: rgba(224, 57, 57, 0.3);
-  border-radius: 7px;
-  font-size: 14px;
-  color: #e03939;
-  padding: 5px 10px;
-  display: inline-block;
-}
-
-.balance-item-img img {
-  width: 100%;
-}
-
-.table thead tr th {
-  font-size: 18px;
-}
-
-.nft-name-price {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-/* ==================== User Wallet end ============== */
-
 .sidebar-close-menu {
   display: none;
 }
