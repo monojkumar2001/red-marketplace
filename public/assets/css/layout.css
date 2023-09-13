@@ -198,7 +198,7 @@ li.nav-list:hover .dp-menu {
         text-align: center !important;
     }
     .m-none {
-        display: none;
+        display:block;
     }
     .l-none {
         display: block;

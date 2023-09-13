@@ -1,0 +1,148 @@
+.nft-details-item-con {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.nft-details-item-con .item-left .item-img {
+    width: 467px;
+    height: 490px;
+}
+.nft-details-item-con .item-left .item-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+.nft-details-item-con .ownership {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.nft-details-item-con .ownership .nft-items-share {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nft-details-item-con .ownership .nft-items-share .share-btn {
+  border: none;
+  background: var(--main-color);
+  padding: 10px 15px;
+  width: fit-content;
+  font-size: 18px;
+  color: var(--white-color);
+  border-radius: 4px;
+}
+.nft-details-item-con .ownership .nft-items-share .share-btns {
+  display: flex;
+  gap: 10px;
+}
+.nft-details-item-con .ownership .owner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nft-details-item-con .ownership .owner .avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.nft-details-item-con .ownership .owner .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.nft-details-item-con .description .nft-titile {
+  font-size: 25px;
+  font-weight: 900;
+}
+.bid-btn-init {
+  width: 100%;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  border-radius: 50px;
+  transition: 0.3s;
+  border: none;
+  justify-content: center;
+  background: var(--main-color);
+}
+
+a.bid-btn-init:hover {
+  background: var(--white-color);
+  color: var(--main-color);
+}
+
+.nft-toggle-bar{
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 7px;
+margin-top: 20px;
+}
+.nft-toggle-bar .nft-toggle-title{
+    border-radius: 7px;
+    background: var(--main-color);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.nft-toggle-title.acitve .icons{
+    transform: rotate(180deg);
+}
+.nft-toggle-title .icons{
+    transform: rotate(0deg);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nft-toggle-bar .nft-toggle-title .nft-items-icon span{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--white-color);
+}
+.nft-toggle-content {
+    display: none;
+    transition:all 0.4s;
+}
+.nft-toggle-content.active{
+    display: block;
+    transition:all 0.4s;
+}
+.nft-content-details{
+    padding: 20px;
+    height: 270px;
+    overflow-y:auto;
+}
+.token-details-item span{
+    font-size: 15px;
+}
+.token-details-item h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.token-details-item a{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.collection-details-con .owner .avatar{
+width: 50px;
+height: 50px;
+}
+.collection-details-con .owner .avatar img{
+width: 100%;
+border-radius: 5px;
+}
+.collection-details-con .owner  h4{
+    font-size: 20px;
+    margin-top: 15px;
+}

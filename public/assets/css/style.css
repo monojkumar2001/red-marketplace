@@ -1599,33 +1599,9 @@ p.price-bid {
   /* padding: 30px 0; */
 }
 
-.item .container {
-  width: 80%;
-  max-width: 1400px;
-  margin: auto;
-  display: flex;
-}
 
-.item .container .item-left {
-  padding-right: 20px;
-  width: 50%;
-}
 
-.item .container .item-left .item-img {
-  width: 675px;
-  height: 745px;
-}
 
-.item .container .item-left .item-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.item .container .item-right {
-  width: 50%;
-  padding-left: 50px;
-}
 
 .item .container .item-right .figure-title {
   display: flex;
@@ -1676,33 +1652,12 @@ p.price-bid {
   font-size: 18px;
 }
 
-.item .container .item-right .ownership {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin-top: 20px;
-}
 
-.item .container .item-right .ownership .owner {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-radius: 10px;
-  background: rgba(255, 62, 62, 0.07);
-}
 
-.item .container .item-right .ownership .owner .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-}
 
-.item .container .item-right .ownership .owner .avatar img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
+
+
+
 
 .item .container .item-right .ownership .owner .name {
   margin-left: 10px;
@@ -1907,25 +1862,6 @@ p.price-bid {
   font-size: 20px;
 }
 
-a.bid-btn-init {
-  top: 50%;
-  width: 100%;
-  padding: 8px 25px;
-  font-weight: 600;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  color: var(--white-color);
-  border-radius: 23px;
-  transition: 0.3s;
-  justify-content: center;
-  background: var(--main-color);
-}
-
-a.bid-btn-init:hover {
-  background: var(--white-color);
-  color: var(--main-color);
-}
 
 a.bid-btn-init:hover svg path {
   fill: var(--main-color);

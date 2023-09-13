@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import SearchBarItem from "./SearchBar/SearchBarItem";
+import ConnectWalletBtn from "./ConnectWallet/ConnectWalletBtn";
 
 function Header() {
   const [navActive, setNavActive] = useState(false);
@@ -253,22 +254,11 @@ function Header() {
                   </a>
                 </HashLink>
               </li>
+              <li className="nav-list px-3">
+              <ConnectWalletBtn/>
+              </li>
             </ul>
-            <Link to="/wallet" onClick={_toggleSidebar}>
-              <a href="" className="custom-btn l-none mt-3 connect-btn-mobile">
-                <span>Connect Wallet</span>
-              </a>
-            </Link>
-          </div>
-
-          <div className="wallet-btn m-none">
-            <Link to="/wallet" onClick={_toggleSidebar}>
-              <a href="" className="custom-btn-alt">
-                <span>
-                  <i className="icofont-wallet"></i> Connect Wallet
-                </span>
-              </a>
-            </Link>
+          
           </div>
           <div className="show-nav" onClick={_toggleSidebar}>
             <i className="icofont-navigation-menu"></i>
