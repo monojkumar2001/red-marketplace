@@ -158,26 +158,7 @@ table.table {
 }
 
 .custom-btn:hover {
-    color: var(--main-color);
-}
-
-.custom-btn:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%) scale(0);
-    width: 1px;
-    height: 1px;
-    background: var(--white-color);
-    opacity: 0;
-    border-radius: 50%;
-    transition: 0.5s ease-in-out;
-}
-
-.custom-btn:hover:before {
-    transform: translate(-50%) scale(310);
-    opacity: 1;
+    color: #ffffff;
 }
 
 .custom-btn span {

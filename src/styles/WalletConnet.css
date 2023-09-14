@@ -7,6 +7,7 @@
     position: fixed;
     -webkit-overflow-scrolling: none;
     z-index: 11111111;
+    transition: 0.5s;
   }
   .overlay2{
     backdrop-filter: blur(4px);
@@ -25,13 +26,14 @@
     display: flex;
     box-shadow: 0 10px 10px #757575;
     flex-direction: column;
+    transition: 0.5s;
     gap: 20px;
   }
   .wallet-connect-content .modal-title{
     font-family: var(--secondary-font);
     color: var(--black-color);
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 700;
     text-align: center;
   }
   .wallet-content-wrapper .connect-wallet-item{

@@ -10,7 +10,7 @@ const ConnectWallect = ({walletConnect,toggleHandleWallet}) => {
           <div className="modal-content wallet-connect-content">
             <div className="modal-header flex-column justify-content-center text-center">
               <h5 className="modal-title">
-                Connect to your Favourite Crypto Wallet
+                Connect to your Wallet
               </h5>
               <p>If you don't have a wallet, you can select a provider and create one now.</p>
               <button
@@ -19,8 +19,7 @@ const ConnectWallect = ({walletConnect,toggleHandleWallet}) => {
                 onClick={toggleHandleWallet}
               ></button>
             </div>
-            <div className="modal-body">
-              <div className="wallet-content-wrapper d-flex flex-column gap-3">
+            <div className="wallet-content-wrapper d-flex flex-column gap-3">
                 <button
                 //   onClick={handleMetamask}
                   className="connect-wallet-item d-flex align-items-center flex-column gap-2 justify-content-center"
@@ -46,7 +45,6 @@ const ConnectWallect = ({walletConnect,toggleHandleWallet}) => {
                   <span>Connect to your Coinbase Wallet</span>
                 </button>
               </div>
-            </div>
           </div>
         </div>
       )}

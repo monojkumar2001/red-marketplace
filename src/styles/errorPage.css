@@ -1,0 +1,22 @@
+.error-page {
+    padding: 150px 0 100px 0;
+    background-color: white;
+  }
+  .error-page-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    color: var(--black-color);
+  }
+  .error-page-wrapper .section-title {
+    color: var(--black-color);
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .error-page-wrapper h4 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: var(--secondary-font);
+  }

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import SearchBarItem from "./SearchBar/SearchBarItem";
-import ConnectWalletBtn from "./ConnectWallet/ConnectWalletBtn";
+import SearchBarItem from "../SearchBar/SearchBarItem";
+import ConnectWalletBtn from "../ConnectWallet/ConnectWalletBtn";
 
 function Header() {
   const [navActive, setNavActive] = useState(false);
@@ -34,9 +34,9 @@ function Header() {
       <div className="container">
         <nav className="navigation">
           <div className="logo">
-            <a href="" className="logo-link">
+            <Link to="/" className="logo-link">
               <img src="assets/img/logo/logo-2.png" alt="" />
-            </a>
+            </Link>
           </div>
         <SearchBarItem/>
 
@@ -47,9 +47,9 @@ function Header() {
             <ul className="menu-nav-ul">
               <li className="nav-list">
                 <HashLink to="/">
-                  <a href="" className="nav-link" onClick={_toggleSidebar}>
+                  <Link to="/" className="nav-link" onClick={_toggleSidebar}>
                     Home
-                  </a>
+                  </Link>
                 </HashLink>
               </li>
               <li
@@ -98,48 +98,6 @@ function Header() {
                           onClick={_toggleSidebar}
                         >
                           Auctions
-                        </HashLink>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li className="nav-list">
-                <HashLink to="/activity" onClick={_toggleSidebar}>
-                  <a href="" className="nav-link">
-                    Activity
-                  </a>
-                </HashLink>
-              </li>
-
-              <li
-                className="nav-list"
-                onClick={() => {
-                  if (dropdownActive === 2) {
-                    setDropdownActive();
-                  } else {
-                    setDropdownActive(2);
-                  }
-                }}
-              >
-                <div className="select nav-select-item">
-                  <div className="select-menu">
-                    <div className="select-menu-inner">
-                      <p>Community</p>
-                      <i className="icofont-simple-down"></i>
-                    </div>
-                    <ul
-                      className={
-                        dropdownActive === 2 ? "dp-menu active" : "dp-menu"
-                      }
-                    >
-                      <li>
-                        <HashLink
-                          to="/help"
-                          className="dp-link"
-                          onClick={_toggleSidebar}
-                        >
-                          Help Center
                         </HashLink>
                       </li>
                     </ul>
@@ -249,9 +207,9 @@ function Header() {
               </li>
               <li className="nav-list">
                 <HashLink to="/contact" onClick={_toggleSidebar}>
-                  <a href="" className="nav-link">
+                  <Link to="/" className="nav-link">
                     Contacts
-                  </a>
+                  </Link>
                 </HashLink>
               </li>
               <li className="nav-list px-3">

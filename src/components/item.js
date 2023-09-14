@@ -5,6 +5,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/NftDetails.css";
+import { Link } from "react-router-dom";
 import "swiper/css/scrollbar";
 import { IoMdRefresh, IoIosArrowDown } from "react-icons/io";
 import { FiShare,FiActivity } from "react-icons/fi";
@@ -13,16 +14,23 @@ import { FaRegHandPaper } from "react-icons/fa";
 import NftTransection from "./ItemsNft/NftTransection";
 import TokenDetails from "./ItemsNft/TokenDetails";
 import CollectionDetailsItem from "./ItemsNft/CollectionDetailsItem";
+import MakeOfferPopup from "./PopupItem/MakeOfferPopup";
+import BuyOfferPopup from "./PopupItem/BuyOfferPopup";
+import NFTModelCongratulations from "./PopupItem/NFTModelCongratulations";
 function Item() {
   const [toggleActive, setToggleActive] = useState(0);
   const toggleHandle = (index) => {
     setToggleActive(index);
   };
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
   return (
     <>
       {/*
     <!-- =============page banner==================== -->*/}
-      {/* <div className="page-banner">
+      <div className="page-banner">
         <div className="container">
           <div className="page-banner-content">
             <div className="banner-inner">
@@ -34,7 +42,7 @@ function Item() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/*
     <!-- =============page banner end================ -->*/}
       {/* <!-- ============feature============== --> */}
@@ -134,7 +142,7 @@ function Item() {
                   </div>
                 </div>
                 <div className="nft-items-share">
-                  <button className="share-btn">
+                  <button className="share-btn" onClick={refreshPage}>
                     <IoMdRefresh />
                   </button>
                   <button className="share-btn share-btns">
@@ -162,9 +170,7 @@ function Item() {
                 <button className="bid-btn-init w-100">
                   <span>Not listed</span>
                 </button>
-                <button className="bid-btn-init w-100">
-                  <span>Make offer</span>
-                </button>
+                <MakeOfferPopup/>
               </div>
 
               <div className="nft-toggle-bar">

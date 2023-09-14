@@ -6,7 +6,6 @@
 
 .banner {
   min-height: 800px;
-  /* display: grid; */
   align-items: center;
   /* background: linear-gradient(180deg, #6835f8 0%, #4d20ca 100%); */
   background-image: url(../img/banner/2.jpg);
@@ -170,6 +169,7 @@ p.banner-des {
 
 p.author-type {
   color: #b3b3b3;
+
 }
 
 ul.cat-fil-link li {
@@ -275,12 +275,7 @@ img.product {
   align-items: center;
 }
 
-a.product-name {
-  color: #1f1f2c;
-  transition: 0.3s;
-  font-size: 18px;
-  font-weight: bold;
-}
+
 
 .name-cat {
   display: flex;
@@ -298,7 +293,7 @@ a.product-name:hover {
 }
 
 .buy-like {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;

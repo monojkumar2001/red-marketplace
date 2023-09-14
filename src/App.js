@@ -1,16 +1,15 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Home from "./components/home";
+import Header from "./components/layout/header";
+import Footer from "./components/layout/footer";
+import Home from "./pages/home";
 import Item from "./components/item";
-import Explore from "./components/explore";
+import Explore from "./pages/explore";
 import Activity from "./components/activity";
 import Wallet from "./components/wallet";
 import CreateItem from "./components/createItem";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Action from "./components/Action";
-import Help from "./components/Help";
 import Author from "./components/Author";
 import Contact from "./components/Contact";
 
@@ -20,7 +19,7 @@ import User_admin from "./components/dashboard/User_admin";
 import Bids from "./components/dashboard/Bids";
 
 import Ranking from "./components/Ranking";
-import Collection from "./components/Collection";
+import Collection from "./pages/Collection";
 import CollectionCreate from "./components/CollectionCreate";
 import MyCollection from "./components/MyCollection";
 import EditCreateCollection from "./components/EditCreateCollection";
@@ -30,6 +29,7 @@ import CollectedItem from "./components/dashboard/CollectedItem";
 import UserOffersMade from "./components/dashboard/UserOffersMade";
 import UserDeals from "./components/dashboard/UserDeals";
 import UserFavorited from "./components/dashboard/UserFavorited";
+import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <BrowserRouter>
@@ -37,6 +37,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}/> 
+          <Route path="*" element={<ErrorPage/>}/>
           <Route path="/collection"  element={  <Collection />}/>
           <Route path="/item"  element={   <Item />}/>
           <Route path="/author-profile" element={<AuthorProfile />}/>
@@ -44,7 +45,6 @@ function App() {
           <Route path="/activity" element={ <Activity />}/>
           <Route path="/wallet" element={  <Wallet />}/>
           <Route path="/action" element={  <Action />}/>
-          <Route path="/help" element={  <Help />}/>
           <Route path="/author" element={  <Author />}/>
           <Route path="/contact" element={  <Contact/>}/>
           <Route path="/User-profile" element={  <EditProfile />}/>

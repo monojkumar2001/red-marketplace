@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+function Ranking() {
+  const [category, setCategory] = React.useState("");
 
-function ranking() {
+  const handleChange = (event) => {
+    setCategory(event.target.value);
+  };
+  const [date, setDate] = React.useState("");
+
+  const handleChangeDate = (event) => {
+    setDate(event.target.value);
+  };
+
   return (
     <>
       {/* <!-- =============page banner==================== -->*/}
@@ -11,7 +26,7 @@ function ranking() {
             <div className="banner-inner">
               <h2>Help Center</h2>
               <div className="page-route">
-              <Link to="/">Home</Link>
+                <Link to="/">Home</Link>
                 <p>/ Pages / Ranking </p>
               </div>
             </div>
@@ -25,23 +40,46 @@ function ranking() {
           <div className="ranking-wrapper">
             <div className="ranking-header-btn-item">
               <div className="ranking-btns-item-left">
-                <a href="" className="custom-btn">
-                  <span>All Categories</span>
-                </a>
-                <a href="" className="custom-btn">
-                  <span>All Chains</span>
-                </a>
+                <Box sx={{ minWidth: 200 }}>
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">
+                      All Categories
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      value={category}
+                      label="All Categories"
+                      onChange={handleChange}
+                    >
+                      <MenuItem value={1}>Art</MenuItem>
+                      <MenuItem value={2}>Music</MenuItem>
+                      <MenuItem value={3}>Domain Names</MenuItem>
+                      <MenuItem value={4}>Virtual World</MenuItem>
+                      <MenuItem value={5}>Collectibles</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
               </div>
               <div className="ranking-btns-item-right">
-                <select
-                  className="form-select"
-                  aria-label="Default select example"
-                >
-                  <option selected>Last 7 days</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <Box sx={{ minWidth: 150 }}>
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">
+                      All Time
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      value={date}
+                      label="All Categories"
+                      onChange={handleChangeDate}
+                    >
+                      <MenuItem value={1}>Last 7 days</MenuItem>
+                      <MenuItem value={2}>Last 24 hours</MenuItem>
+                      <MenuItem value={3}>Last 30 days</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
               </div>
             </div>
             <div className="table-responsive">
@@ -328,4 +366,4 @@ function ranking() {
   );
 }
 
-export default ranking;
+export default Ranking;

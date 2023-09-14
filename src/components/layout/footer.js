@@ -52,31 +52,31 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">My Account</h3>
                   </div>
-                  <ul class="footer-menu">
-                    <li class="footer-list">
+                  <ul className="footer-menu">
+                    <li className="footer-list">
                       <Link to="/author">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Authors
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/collection">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                         Collection 
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/collection-create">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                         Create  Collection 
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/item-create">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Create Items
                         </a>
                       </Link>
@@ -89,31 +89,31 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">Resources</h3>
                   </div>
-                  <ul class="footer-menu">
-                    <li class="footer-list">
+                  <ul className="footer-menu">
+                    <li className="footer-list">
                       <Link to="/help">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Help & Support
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/action">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Live Auctions
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/item">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Item Details
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/activity">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Activity
                         </a>
                       </Link>
@@ -126,30 +126,30 @@ function Footer() {
                   <div className="footer-title">
                     <h3 className="f-title">Company</h3>
                   </div>
-                  <ul class="footer-menu">
-                    <li class="footer-list">
+                  <ul className="footer-menu">
+                    <li className="footer-list">
                       <Link to="">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           About Us
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="/contact">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Contact Us
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
+                    <li className="footer-list">
                       <Link to="">
-                        <a href="" class="footer-link">
+                        <a href="" className="footer-link">
                           Our Blog
                         </a>
                       </Link>
                     </li>
-                    <li class="footer-list">
-                      <a href="" class="footer-link">
+                    <li className="footer-list">
+                      <a href="" className="footer-link">
                         Discover
                       </a>
                     </li>

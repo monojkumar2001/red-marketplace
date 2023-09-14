@@ -1,0 +1,37 @@
+.wallet-content-wrapper .nft-items-headers .nft-item-title h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+.wallet-content-wrapper .nft-item-price {
+    border: 1px solid #ddd;
+    padding-left: 20px;
+    border-radius: 6px;
+}
+.wallet-content-wrapper .nft-item-price input{
+    border: none;
+}
+.wallet-content-wrapper .nft-item-price h4{
+    padding: 10px 20px;
+    border-left: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: 700;
+}
+.wallet-content-wrapper .nft-offer-balance .nft-offer-balance-item{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    height: 75px;
+    border-radius: 6px;
+}
+.wallet-content-wrapper .nft-offer-balance .nft-offer-balance-item h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.wallet-content-wrapper .nft-validity-items .form-select{
+    width: 50%;
+}
+.wallet-content-wrapper .nft-btn-items .alt-bid-btn-init{
+    background: none;
+    color: var(--black-color);
+    border: 1px solid #ddd;
+}

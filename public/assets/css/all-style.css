@@ -40,6 +40,10 @@
   border-radius: 4px !important;
 }
 
+.demo-simple-select-label{
+  width: 400px;
+}
+
 .ranking-btns-item-right .form-select:focus {
   border-radius: 4px !important;
 }
